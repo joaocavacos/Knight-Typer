@@ -1,2 +1,2 @@
 # MicroGame01
- First micro game
+ First DJ2D micro game
