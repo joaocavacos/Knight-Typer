@@ -3,33 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class ButtonEffect : MonoBehaviour
 {
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject optionsMenu;
 
-    void ExitGame(){
+    public AudioMixer audioMixer;
+
+    public void ExitGame(){
         Application.Quit();
         Debug.Log("The game has quitted");
     }
 
-    void StartGame(){
+    public void StartGame(){
         SceneManager.LoadScene("Gameplay Scene");
     }
 
-    void OpenOptions(){
+    public void setSound(float soundVolume){
+
+        audioMixer.SetFloat("Sound", soundVolume);
+    }
+
+    public void setMusic(float musicVolume){
+
+    }
+
+    public void OpenOptions(){
 
         mainMenu.SetActive(false);
         optionsMenu.SetActive(true);
     }
 
-    void CloseOptions(){
+    public void CloseOptions(){
         mainMenu.SetActive(true);
         optionsMenu.SetActive(false);
     }
 
-    void SaveOptions(){
+    public void SaveOptions(){
 
     }
 
