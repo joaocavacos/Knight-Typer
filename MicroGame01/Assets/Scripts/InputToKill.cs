@@ -2,43 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class InputToKill : MonoBehaviour
 {
+	private List<string> words = new List<string> {"Wizard", "Enemy", "Backdoor", "TypetoKill"};
     [SerializeField] TextMeshProUGUI palavra;
     [SerializeField] TextMeshProUGUI inputPalavra;
-
-	bool allowEnter;
     string guess;
+	//[SerializeField] GameObject enemy;
+	[SerializeField] Slider ManaSlider;
+	float manaUsage = 10f;
 
+	
 	void Start()
 	{
 		guess = inputPalavra.text;
+		palavra.text = words[Random.Range(0, words.Count)];
 	}
 	void Update()
     {
-		if (allowEnter && (inputPalavra.text.Length > 0) && (Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.KeypadEnter))) //NOT WORKINGGGGGG
-		{
-			OnSubmit();
-			allowEnter = false;
-		}
-		else
-		{
-			allowEnter = inputPalavra.isActiveAndEnabled;
-		}
+		
     }
 
-	void OnSubmit()
-	{
-		if (guess == palavra.text)
-		{
-			inputPalavra.text = "";
-			inputPalavra.color = Color.green;
+	public void OnSubmit(){
+
+		if(guess == palavra.text){
+			Debug.Log("Correct word");
 		}
 		else
 		{
-			inputPalavra.text = "";
-			inputPalavra.color = Color.red;
+			Debug.Log("Wrong word");
 		}
+
+		ManaSlider.value -= manaUsage;
 	}
+
 }
