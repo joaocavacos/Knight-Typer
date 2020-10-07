@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bullet : MonoBehaviour
 {
     
-    float bulletSpeed = 2f;
-
+    float bulletSpeed = 5f;
+    float bulletDamage = 20f;
     Rigidbody2D rb;
-
     Player target;
     Vector2 playerDirection;
+    public Slider HPSlider;
+
 
 
     void Start()
@@ -25,9 +27,15 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
 
         if(other.gameObject.name.Equals("Player")){
+            Destroy(gameObject);
             Debug.Log("Player Hit");
-            //---> make hp decrease and bullet damage
-        }
+            HPSlider.value -= bulletDamage; 
+            
+            /*if(HPSlider.value <= 0){
+                Destroy(player);
+            }*/
+        } 
+
     }
-    
 }
+    

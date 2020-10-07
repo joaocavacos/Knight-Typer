@@ -12,8 +12,8 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        fireRate = 1f;
-        nextShot = Time.deltaTime; //every second shoots
+        fireRate = 3f;
+        nextShot = Time.time; //every second shoots
     }
 
     
@@ -24,9 +24,9 @@ public class Enemy : MonoBehaviour
 
     void CheckFire(){
 
-        if(Time.deltaTime > nextShot){
+        if(Time.time > nextShot){
             Instantiate(bullet, transform.position, Quaternion.identity);
-            nextShot = Time.deltaTime + fireRate;
+            nextShot = Time.time + fireRate;
         }
     }
 }
