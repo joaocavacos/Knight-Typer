@@ -496,6 +496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 339a79e1b7be02a4c8c504f1d205187a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HPSlider: {fileID: 2031752822}
 --- !u!212 &914995249
 SpriteRenderer:
   m_ObjectHideFlags: 0
