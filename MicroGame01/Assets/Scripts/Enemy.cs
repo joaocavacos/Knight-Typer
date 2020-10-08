@@ -1,32 +1,33 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    private float walkX;
+    public float speed;
     
-    [SerializeField] GameObject bullet;
+    private Vector2 position;
+    private Vector3 spawnPoint;
 
-    float fireRate;
-    float nextShot;
+    public GameObject spawn;
+    private GameObject enemy;
 
     void Start()
     {
-        fireRate = 3f;
-        nextShot = Time.time; //every second shoots
+        enemy = GetComponent<GameObject>();
+        spawnPoint = spawn.transform.position;
     }
 
-    
     void Update()
     {
-        CheckFire();
-    }
-
-    void CheckFire(){
-
-        if(Time.time > nextShot){
-            Instantiate(bullet, transform.position, Quaternion.identity);
-            nextShot = Time.time + fireRate;
-        }
+        //Instantiate((enemy, spawnPoint, Quaternion.identity));
+        
+        position = transform.position;
+        position.x = position.x - speed * Time.deltaTime;
+        transform.position = position;
+        
+        
     }
 }
