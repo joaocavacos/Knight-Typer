@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         enemy = GetComponent<GameObject>();
-        spawnPoint = spawn.transform.position;
+        //spawnPoint = spawn.transform.position;
     }
 
     void Update()

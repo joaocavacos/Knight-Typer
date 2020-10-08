@@ -8,12 +8,13 @@ using Random = UnityEngine.Random;
 
 public class InputToKill : MonoBehaviour
 {
-	[SerializeField] List<string> words = new List<string> {"Wizard", "Enemy", "Backdoor", "TypetoKill", "Attack", "Otorrinolaringologista"};
+	[SerializeField] List<string> words = new List<string> {"Wizard", "Enemy", "Backdoor", "TypetoKill", "Attack"};
 	
     [SerializeField] TextMeshProUGUI palavraEscolhida;
     [SerializeField] TextMeshProUGUI wordInput;
 
-    private string input, palavra;
+    string input, palavra;
+	float mana;
 
     [SerializeField] Slider ManaSlider;
 	
@@ -21,11 +22,10 @@ public class InputToKill : MonoBehaviour
 
 	void Start()
 	{
+		palavraEscolhida.text = words[Random.Range(0, words.Count)];
 		palavra = palavraEscolhida.text;
-		input = wordInput.text;
-		
-		palavra = words[Random.Range(0, words.Count)];
-
+		input = wordInput.text.Trim((char)8203);
+		mana = ManaSlider.value;
 	}
 
 	private void Update()
@@ -34,17 +34,14 @@ public class InputToKill : MonoBehaviour
 
 	public void OnSubmit(){
 		
+		palavra = palavraEscolhida.text.Trim().ToLower();
+		input = wordInput.text.Trim((char)8203).ToLower();
+
 		Debug.Log(($"Input : {input}"));
 		Debug.Log(($"Palavra : {palavra}"));
-
-		input.Trim();
-		palavra.Trim();
-		input.ToLower();
-		palavra.ToLower();
-		
 		
 		if(string.Equals(input,palavra)){
-			Debug.Log("Correct word");
+			Debug.Log("You killed him");
 		}
 		else
 		{
@@ -52,7 +49,7 @@ public class InputToKill : MonoBehaviour
 		}
 		
 		input = "";
-		ManaSlider.value -= manaUsage;
+		mana -= manaUsage;
 	}
 
 }
