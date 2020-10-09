@@ -32,8 +32,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InputToKill.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InputToKill.cs" />
       </list>
     </option>
   </component>
@@ -85,6 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602167695990</updated>
       <workItem from="1602167701554" duration="5951000" />
+      <workItem from="1602228259694" duration="2607000" />
     </task>
     <servers />
   </component>
@@ -103,6 +104,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

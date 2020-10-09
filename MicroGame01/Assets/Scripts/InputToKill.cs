@@ -15,6 +15,7 @@ public class InputToKill : MonoBehaviour
 
     string input, palavra;
 	float mana;
+	//public GameObject enemy;
 
     [SerializeField] Slider ManaSlider;
 	
@@ -26,10 +27,6 @@ public class InputToKill : MonoBehaviour
 		palavra = palavraEscolhida.text;
 		input = wordInput.text.Trim((char)8203);
 		mana = ManaSlider.value;
-	}
-
-	private void Update()
-	{
 	}
 
 	public void OnSubmit(){
