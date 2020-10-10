@@ -817,6 +817,7 @@ GameObject:
   - component: {fileID: 911249288}
   - component: {fileID: 911249287}
   - component: {fileID: 911249289}
+  - component: {fileID: 911249290}
   m_Layer: 0
   m_Name: HeavyBandit_0
   m_TagString: Untagged
@@ -901,8 +902,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81435dbe73e5f84eb77acf8c654d6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  palavraEscolhida: {fileID: 0}
+  palavra: 
   speed: 1
   spawn: {fileID: 0}
+  enemyObj: {fileID: 0}
+--- !u!114 &911249290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911249286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81435dbe73e5f84eb77acf8c654d6ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palavraEscolhida: {fileID: 974725323}
+  palavra: 
+  speed: 0.5
+  spawn: {fileID: 345052663}
+  enemyObj: {fileID: 911249286}
 --- !u!1 &974725321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1360,6 +1381,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b6e88e1f8384144b71b563ed0d0a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manaSlider: {fileID: 1322135766}
+  hpSlider: {fileID: 8277506}
+  mana: 0
+  hp: 0
+  manaUsage: 10
 --- !u!1 &1322135764
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,16 +2086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f99bc2c8938e94fa7552248110b902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  words:
-  - Wizard
-  - Enemy
-  - Backdoor
-  - TypetoKill
-  - Attack
-  - Otorrinolaringologista
-  palavraEscolhida: {fileID: 1810309591}
   wordInput: {fileID: 1588330805}
-  ManaSlider: {fileID: 1322135766}
 --- !u!1 &1810309589
 GameObject:
   m_ObjectHideFlags: 0
@@ -2237,6 +2254,7 @@ GameObject:
   - component: {fileID: 1889012557}
   - component: {fileID: 1889012556}
   - component: {fileID: 1889012558}
+  - component: {fileID: 1889012559}
   m_Layer: 0
   m_Name: LightBandit_0
   m_TagString: Untagged
@@ -2321,8 +2339,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81435dbe73e5f84eb77acf8c654d6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  palavraEscolhida: {fileID: 0}
+  palavra: 
   speed: 1.2
   spawn: {fileID: 0}
+  enemyObj: {fileID: 0}
+--- !u!114 &1889012559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889012555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81435dbe73e5f84eb77acf8c654d6ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palavraEscolhida: {fileID: 1810309591}
+  palavra: 
+  speed: 0.7
+  spawn: {fileID: 345052663}
+  enemyObj: {fileID: 1889012555}
 --- !u!1 &2134984007
 GameObject:
   m_ObjectHideFlags: 0

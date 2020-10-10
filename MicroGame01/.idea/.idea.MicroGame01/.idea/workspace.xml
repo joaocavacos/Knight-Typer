@@ -19,7 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be44f089-10b5-4305-80bf-872c06efdec0" name="Default Changelist" comment="" />
+    <list default="true" id="be44f089-10b5-4305-80bf-872c06efdec0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MicroGame01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroGame01/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroGame01/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroGame01/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroGame01/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroGame01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroGame01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputToKill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputToKill.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +44,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/InputProcessor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputToKill.cs" />
@@ -38,12 +52,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1ibE3evRf8WvbkdnfBnrHubiwph" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -86,6 +103,9 @@
       <updated>1602167695990</updated>
       <workItem from="1602167701554" duration="5951000" />
       <workItem from="1602228259694" duration="2607000" />
+      <workItem from="1602257931013" duration="32000" />
+      <workItem from="1602259362365" duration="2621000" />
+      <workItem from="1602287846218" duration="4974000" />
     </task>
     <servers />
   </component>
@@ -107,12 +127,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="165" key="SettingsEditor" timestamp="1602168366380">
+    <state x="0" y="165" key="SettingsEditor" timestamp="1602259406659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602168366380" />
+    <state x="0" y="165" key="SettingsEditor/1920.-229.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602259406659" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602289644753">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-229.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602289644753" />
   </component>
 </project>

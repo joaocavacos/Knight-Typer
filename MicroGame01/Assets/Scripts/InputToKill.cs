@@ -8,45 +8,36 @@ using Random = UnityEngine.Random;
 
 public class InputToKill : MonoBehaviour
 {
-	[SerializeField] List<string> words = new List<string> {"Wizard", "Enemy", "Backdoor", "TypetoKill", "Attack"};
+	Enemy enemyInstance = new Enemy();
 	
-    [SerializeField] TextMeshProUGUI palavraEscolhida;
-    [SerializeField] TextMeshProUGUI wordInput;
+	[SerializeField] TextMeshProUGUI wordInput;
 
-    string input, palavra;
-	float mana;
-	//public GameObject enemy;
-
-    [SerializeField] Slider ManaSlider;
-	
-	float manaUsage = 10f;
+	string input;
 
 	void Start()
 	{
-		palavraEscolhida.text = words[Random.Range(0, words.Count)];
-		palavra = palavraEscolhida.text;
 		input = wordInput.text.Trim((char)8203);
-		mana = ManaSlider.value;
 	}
 
 	public void OnSubmit(){
 		
-		palavra = palavraEscolhida.text.Trim().ToLower();
-		input = wordInput.text.Trim((char)8203).ToLower();
-
-		Debug.Log(($"Input : {input}"));
-		Debug.Log(($"Palavra : {palavra}"));
+		input = wordInput.text.Trim((char)8203);
 		
-		if(string.Equals(input,palavra)){
+		Debug.Log(($"Input : {input}"));
+		
+		Debug.Log(($"Palavra : {enemyInstance.palavra}"));
+		
+		if(string.Equals(input,enemyInstance.palavra)){
+			Destroy(enemyInstance.enemyObj);
 			Debug.Log("You killed him");
 		}
 		else
 		{
 			Debug.Log("Wrong word");
 		}
-		
+
 		input = "";
-		mana -= manaUsage;
+		Player.player.mana -= Player.player.manaUsage;
 	}
 
 }
