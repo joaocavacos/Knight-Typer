@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -8,8 +9,7 @@ using Random = UnityEngine.Random;
 
 public class InputToKill : MonoBehaviour
 {
-	Enemy enemyInstance = new Enemy();
-	
+
 	[SerializeField] TextMeshProUGUI wordInput;
 
 	string input;
@@ -23,21 +23,24 @@ public class InputToKill : MonoBehaviour
 		
 		input = wordInput.text.Trim((char)8203);
 		
-		Debug.Log(($"Input : {input}"));
-		
-		Debug.Log(($"Palavra : {enemyInstance.palavra}"));
-		
-		if(string.Equals(input,enemyInstance.palavra)){
-			Destroy(enemyInstance.enemyObj);
-			Debug.Log("You killed him");
-		}
-		else
+		foreach (var enemy in Enemy.enemies)
 		{
-			Debug.Log("Wrong word");
+			Debug.Log(($"Input : {input}"));
+			Debug.Log(($"Palavra : {enemy.palavra}"));
+			
+			if(string.Equals(input,enemy.palavra)){
+				Destroy(enemy.enemyObj);
+				Debug.Log("You killed him");
+			}
+			else
+			{
+				Debug.Log("Wrong word");
+			}
 		}
 
-		input = "";
+		wordInput.text = "";
 		Player.player.mana -= Player.player.manaUsage;
+		Player.player.manaSlider.value = Player.player.mana;
 	}
 
 }

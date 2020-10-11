@@ -9,9 +9,8 @@ public class Player : MonoBehaviour
     public static Player player;
     
     private Rigidbody2D rb;
-    
-    [SerializeField] Slider manaSlider;
-    [SerializeField] Slider hpSlider;
+    public Slider manaSlider;
+    public Slider hpSlider;
     
     [HideInInspector] public float mana, hp;
     public float manaUsage;
