@@ -10,6 +10,10 @@ using Random = UnityEngine.Random;
 public class InputToKill : MonoBehaviour
 {
 
+	[SerializeField] Animator playerAnimator;
+	[SerializeField] Animator enemyAnimator;
+	private Animation playerAnimation;
+	
 	[SerializeField] TextMeshProUGUI wordInput;
 
 	string input;
@@ -29,7 +33,9 @@ public class InputToKill : MonoBehaviour
 			Debug.Log(($"Palavra : {enemy.palavra}"));
 			
 			if(string.Equals(input,enemy.palavra)){
+				playerAnimator.SetBool("Attack1",true);
 				Destroy(enemy.enemyObj);
+				
 				Debug.Log("You killed him");
 			}
 			else
@@ -38,7 +44,8 @@ public class InputToKill : MonoBehaviour
 			}
 		}
 
-		wordInput.text = "";
+		wordInput.text = ""; // not working
+		
 		Player.player.mana -= Player.player.manaUsage;
 		Player.player.manaSlider.value = Player.player.mana;
 	}

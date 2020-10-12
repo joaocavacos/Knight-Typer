@@ -14,16 +14,14 @@ public class Enemy : MonoBehaviour
     public static List<Enemy> enemies = new List<Enemy>();
 
     [SerializeField] public TextMeshProUGUI palavraEscolhida;
-    
-    [HideInInspector] public string palavra;
-    public float speed;
-    private float respawnTime;
-    
-    
-    private Vector2 position;
-    private Vector3 spawnPoint;
+    [SerializeField] private Animator enemyAnimator;
 
-    public GameObject spawn;
+    [HideInInspector] public string palavra;
+    
+    public float speed;
+
+    private Vector2 position;
+    
     public GameObject enemyObj;
 
     void Start()
@@ -31,10 +29,9 @@ public class Enemy : MonoBehaviour
         palavraEscolhida.text = words[Random.Range(0, words.Count)];
         palavra = palavraEscolhida.text.Trim();
         enemyObj = this.gameObject;
-        spawnPoint = spawn.transform.position;
-        //StartCoroutine(SpawnEnemies(3));
+
         enemies.Add(this);
-        InvokeRepeating("SpawnEnemies", 2f, 5f);
+        //InvokeRepeating("SpawnEnemies", 2f, 10f);
     }
 
     void Update()
@@ -42,18 +39,12 @@ public class Enemy : MonoBehaviour
         position = transform.position;
         position.x = position.x - speed * Time.deltaTime;
         transform.position = position;
-        
+
+        if (position.x > 0)
+        {
+            enemyAnimator.SetInteger("AnimState", 2);
+        }
+
     }
 
-    void SpawnEnemies()
-    {
-        Instantiate(enemyObj, spawnPoint, quaternion.identity);
-    }
-    /*private IEnumerator SpawnEnemies(float resTime)
-    {
-        Instantiate(enemyObj, spawnPoint, quaternion.identity);
-        yield return new WaitForSecondsRealtime(resTime);
-    }
-    */
-    
 }

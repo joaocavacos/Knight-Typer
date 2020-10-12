@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public static Player player;
-    
+
     private Rigidbody2D rb;
     public Slider manaSlider;
     public Slider hpSlider;
-    
+
     [HideInInspector] public float mana, hp;
     public float manaUsage;
 
@@ -25,7 +25,5 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        
     }
-
 }
