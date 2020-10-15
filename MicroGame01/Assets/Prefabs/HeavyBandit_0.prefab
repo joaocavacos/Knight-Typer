@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 3869946144716321666}
   - component: {fileID: 3869946144716321677}
   - component: {fileID: 3869946144716321664}
+  - component: {fileID: 3153613617936188626}
   - component: {fileID: 6983547671090023317}
   m_Layer: 0
   m_Name: HeavyBandit_0
@@ -202,10 +203,27 @@ MonoBehaviour:
   - TypetoKill
   - Attack
   palavraEscolhida: {fileID: 3869946144788110529}
-  enemyAnimator: {fileID: 6983547671090023317}
   palavra: 
-  speed: 0.5
   enemyObj: {fileID: 3869946144716321676}
+--- !u!114 &3153613617936188626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869946144716321676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 918049c82d97df942837fb86b8c85395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAnimator: {fileID: 6983547671090023317}
+  playerAnimator: {fileID: 3948710214552155293, guid: c6a24a2b97f875b47bc847b52c1910bd,
+    type: 3}
+  targetPlayer: {fileID: 3948710214552155291, guid: c6a24a2b97f875b47bc847b52c1910bd,
+    type: 3}
+  distance: 1
+  damage: 10
 --- !u!95 &6983547671090023317
 Animator:
   serializedVersion: 3

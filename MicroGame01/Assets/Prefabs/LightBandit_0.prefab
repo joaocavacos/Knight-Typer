@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 7164792059778708488}
   - component: {fileID: 7164792059778708489}
   - component: {fileID: 7164792059778708490}
+  - component: {fileID: 6537103685510530688}
   - component: {fileID: 3866174992463843143}
   m_Layer: 0
   m_Name: LightBandit_0
@@ -202,10 +203,27 @@ MonoBehaviour:
   - TypetoKill
   - Attack
   palavraEscolhida: {fileID: 7164792059966594706}
-  enemyAnimator: {fileID: 3866174992463843143}
   palavra: 
-  speed: 1
   enemyObj: {fileID: 7164792059778708494}
+--- !u!114 &6537103685510530688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7164792059778708494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 918049c82d97df942837fb86b8c85395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAnimator: {fileID: 3866174992463843143}
+  playerAnimator: {fileID: 3948710214552155293, guid: c6a24a2b97f875b47bc847b52c1910bd,
+    type: 3}
+  targetPlayer: {fileID: 3948710214552155291, guid: c6a24a2b97f875b47bc847b52c1910bd,
+    type: 3}
+  distance: 0.9
+  damage: 5
 --- !u!95 &3866174992463843143
 Animator:
   serializedVersion: 3
