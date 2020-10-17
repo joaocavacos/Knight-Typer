@@ -27,7 +27,6 @@
           <e p="License.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="ButtonEffect.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
           <e p="EnemyFollow.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
@@ -35,6 +34,8 @@
           <e p="InputToKill.cs" t="Include" />
           <e p="ParallaxEffect.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="SceneTransitions.cs" t="Include" />
+          <e p="Settings.cs" t="Include" />
           <e p="Timer.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

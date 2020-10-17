@@ -6,8 +6,6 @@ using Random = UnityEngine.Random;
 
 public class EnemyFollow : MonoBehaviour
 {
-    public static EnemyFollow efollow;
-
     [SerializeField] Animator enemyAnimator;
     [SerializeField] Animator playerAnimator;
 
@@ -37,8 +35,10 @@ public class EnemyFollow : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, targetPlayer.position) <= distance)
         {
+            playerAnimator.enabled = true;
             Player.player.hpSlider.value -= damage;
             enemyAnimator.Play("Attack");
+            //playerAnimator.Play("Hurt");
             Debug.Log(Vector2.Distance(transform.position, targetPlayer.position));
         }
         

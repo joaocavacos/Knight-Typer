@@ -6,12 +6,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using TMPro;
 
-public class ButtonEffect : MonoBehaviour
+public class Settings : MonoBehaviour
 {
-    //Options Menu things
+    //Settings Menu things
     //&& Buttons on the Main Menu
-    
-    
+
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject optionsMenu;
 
@@ -41,16 +40,13 @@ public class ButtonEffect : MonoBehaviour
         resolutionDropdown.RefreshShownValue();
 
     }
-
-    public void ExitGame(){
+    
+    public void ExitGame()
+    {
         Application.Quit();
-        Debug.Log("The game has quitted");
+        Debug.Log("The game has quit");
     }
-
-    public void StartGame(){
-        SceneManager.LoadScene("Gameplay Scene");
-    }
-
+    
     public void setSound(float soundVolume){ //Volume sound level
 
         audioMixer.SetFloat("Sound", soundVolume);
