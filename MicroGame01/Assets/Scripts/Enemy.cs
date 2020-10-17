@@ -29,9 +29,4 @@ public class Enemy : MonoBehaviour
         enemies.Add(this);
     }
 
-    void Update()
-    {
-
-    }
-
 }

@@ -29,14 +29,10 @@ public class InputToKill : MonoBehaviour
 		
 		foreach (var enemy in Enemy.enemies)
 		{
-			Debug.Log(($"Input : {input}"));
-			Debug.Log(($"Palavra : {enemy.palavra}"));
-			
+
 			if(string.Equals(input,enemy.palavra)){
 				playerAnimator.SetBool("Attack1",true);
 				Destroy(enemy.enemyObj);
-				
-				Debug.Log("You killed him");
 			}
 			else
 			{

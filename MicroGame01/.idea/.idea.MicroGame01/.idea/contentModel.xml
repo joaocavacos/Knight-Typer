@@ -29,9 +29,9 @@
         <e p="Scripts" t="Include">
           <e p="ButtonEffect.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
-          <e p="EnemyAttack.cs" t="Include" />
           <e p="EnemyFollow.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
+          <e p="GameOver.cs" t="Include" />
           <e p="InputToKill.cs" t="Include" />
           <e p="ParallaxEffect.cs" t="Include" />
           <e p="Player.cs" t="Include" />

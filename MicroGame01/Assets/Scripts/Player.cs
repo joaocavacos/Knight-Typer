@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.Collections;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour
 
     [HideInInspector] public float mana, hp;
     public float manaUsage;
+    public float manaRecovery;
 
     void Start()
     {
@@ -21,11 +23,21 @@ public class Player : MonoBehaviour
         mana = manaSlider.value;
         hp = hpSlider.value;
         rb = GetComponent<Rigidbody2D>();
+        StartCoroutine(RecoverMana());
     }
 
-    void Update()
+    private IEnumerator RecoverMana()
     {
-    
-    
+        if (manaSlider.value < 100)
+        {
+            manaSlider.value += manaRecovery;
+        }
+        else
+        {
+            manaSlider.value = 100;
+        }
+        
+        yield return new WaitForSeconds(3);
+        StartCoroutine(RecoverMana());
     }
 }

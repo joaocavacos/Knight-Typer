@@ -12,7 +12,7 @@ public class EnemyFollow : MonoBehaviour
     [SerializeField] Animator playerAnimator;
 
     public Transform targetPlayer;
-
+    
     private float speed;
     public float distance;
     public float damage;
@@ -21,22 +21,28 @@ public class EnemyFollow : MonoBehaviour
     {
         targetPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         speed = Random.Range(0.5f, 1.2f);
-        InvokeRepeating("Attack", 0f, 2f);
+        StartCoroutine(Attack());
     }
 
     void Update()
     {
-        if (Vector2.Distance(transform.position, targetPlayer.position) >= distance)
+        if (Vector2.Distance(transform.position, targetPlayer.position) >= distance) //If enemy is further from the distance of the player this will move towards the player until the distance set
         {
             transform.position = Vector2.MoveTowards(transform.position, targetPlayer.position, speed * Time.deltaTime);
-            Attack();
+            enemyAnimator.SetInteger("AnimState", 2);
         }
-        Debug.Log(Vector2.Distance(transform.position, targetPlayer.position));
-        Debug.Log(distance);
     }
 
-    void Attack()
+    private IEnumerator Attack() //Corountine for attack, 2 seconds per attack & animations
     {
-        Player.player.hpSlider.value -= damage;
+        if (Vector2.Distance(transform.position, targetPlayer.position) <= distance)
+        {
+            Player.player.hpSlider.value -= damage;
+            enemyAnimator.Play("Attack");
+            Debug.Log(Vector2.Distance(transform.position, targetPlayer.position));
+        }
+        
+        yield return new WaitForSeconds(2);
+        StartCoroutine(Attack());
     }
 }

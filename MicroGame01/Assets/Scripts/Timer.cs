@@ -6,6 +6,9 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
 
+	//Simple timer for records
+	//Leaderboard???
+	
     [SerializeField] TextMeshProUGUI timer;
 
     float currenTime;

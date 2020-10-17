@@ -8,6 +8,10 @@ using TMPro;
 
 public class ButtonEffect : MonoBehaviour
 {
+    //Options Menu things
+    //&& Buttons on the Main Menu
+    
+    
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject optionsMenu;
 
@@ -47,32 +51,32 @@ public class ButtonEffect : MonoBehaviour
         SceneManager.LoadScene("Gameplay Scene");
     }
 
-    public void setSound(float soundVolume){
+    public void setSound(float soundVolume){ //Volume sound level
 
         audioMixer.SetFloat("Sound", soundVolume);
     }
 
     public void setMusic(float musicVolume){
-
+        //still need to add music
     }
 
-    public void setQuality(int qualityIndex){
+    public void setQuality(int qualityIndex){ //Quality settings
         QualitySettings.SetQualityLevel(qualityIndex);
     }
 
-    public void setResolution(int resIndex){
+    public void setResolution(int resIndex){ //Resolution settings
 
         Resolution resolution = resolutions[resIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
-    public void OpenOptions(){
+    public void OpenOptions(){ //Open options menu
 
         mainMenu.SetActive(false);
         optionsMenu.SetActive(true);
     }
 
-    public void SaveOptions(){
+    public void SaveOptions(){ //Save button
         mainMenu.SetActive(true);
         optionsMenu.SetActive(false);
     }

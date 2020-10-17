@@ -556,6 +556,7 @@ GameObject:
   - component: {fileID: 3948710214552155288}
   - component: {fileID: 3948710214552155289}
   - component: {fileID: 3948710214552155290}
+  - component: {fileID: 1469152009856112840}
   - component: {fileID: 3948710214552155270}
   - component: {fileID: 3948710214552155293}
   m_Layer: 0
@@ -669,6 +670,19 @@ MonoBehaviour:
   mana: 0
   hp: 0
   manaUsage: 10
+  manaRecovery: 10
+--- !u!114 &1469152009856112840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3948710214552155271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886dc27b107e2c546b330d01642cdb65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &3948710214552155270
 BoxCollider2D:
   m_ObjectHideFlags: 0
