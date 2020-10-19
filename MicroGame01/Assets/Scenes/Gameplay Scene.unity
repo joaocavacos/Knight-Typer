@@ -444,6 +444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 419c0ca24ab2b384a8aafe58fd55cbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  repeatRate: 10
   spawn: {fileID: 345052663}
   enemiesPrefabs:
   - {fileID: 3869946144716321676, guid: ba911555a84205c4089b455c11b59501, type: 3}
@@ -1805,6 +1806,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3948710214552155290, guid: c6a24a2b97f875b47bc847b52c1910bd,
+        type: 3}
+      propertyPath: hpRecovery
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3948710214552155291, guid: c6a24a2b97f875b47bc847b52c1910bd,
         type: 3}

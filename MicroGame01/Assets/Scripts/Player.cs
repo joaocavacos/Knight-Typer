@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public float mana, hp;
     public float manaUsage;
     public float manaRecovery;
+    public float hpRecovery;
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
         hp = hpSlider.value;
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(RecoverMana());
+        StartCoroutine(RecoverHP());
     }
 
     private IEnumerator RecoverMana()
@@ -39,5 +41,20 @@ public class Player : MonoBehaviour
         
         yield return new WaitForSeconds(3);
         StartCoroutine(RecoverMana());
+    }
+
+    private IEnumerator RecoverHP()
+    {
+        if (hpSlider.value < 100)
+        {
+            hpSlider.value += hpRecovery;
+        }
+        else
+        {
+            hpSlider.value = 100;
+        }
+        
+        yield return new WaitForSeconds(5);
+        StartCoroutine(RecoverHP());
     }
 }

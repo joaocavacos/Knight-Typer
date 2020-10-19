@@ -5,11 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    public Player playerScript;
-    public Enemy enemy;
-    public Timer timer;
-    public InputToKill itK;
-    
+
     void Update()
     {
        /* if (Player.player.hpSlider.value <= 0)

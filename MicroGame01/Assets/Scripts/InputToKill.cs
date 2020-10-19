@@ -34,10 +34,6 @@ public class InputToKill : MonoBehaviour
 				playerAnimator.SetBool("Attack1",true);
 				Destroy(enemy.enemyObj);
 			}
-			else
-			{
-				Debug.Log("Wrong word");
-			}
 		}
 
 		wordInput.text = ""; // not working
