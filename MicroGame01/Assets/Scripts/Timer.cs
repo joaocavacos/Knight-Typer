@@ -7,13 +7,13 @@ public class Timer : MonoBehaviour
 {
 
 	//Simple timer for records
-	//Leaderboard???
-	
-    [SerializeField] TextMeshProUGUI timer;
+
+	[SerializeField] TextMeshProUGUI timer;
 
     float currenTime;
     float minutes;
     float seconds;
+    public static string timerCopy;
 
 
 	void Start()
@@ -28,5 +28,6 @@ public class Timer : MonoBehaviour
         seconds = (Mathf.RoundToInt(currenTime % 60));
 
         timer.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+		PlayerPrefs.SetString("TimerScore", timer.text);
     }
 }

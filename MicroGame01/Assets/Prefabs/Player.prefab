@@ -671,6 +671,8 @@ MonoBehaviour:
   hp: 0
   manaUsage: 10
   manaRecovery: 10
+  hpRecovery: 10
+  playerAnimator: {fileID: 3948710214552155293}
 --- !u!114 &1469152009856112840
 MonoBehaviour:
   m_ObjectHideFlags: 0

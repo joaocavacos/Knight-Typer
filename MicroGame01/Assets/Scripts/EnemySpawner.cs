@@ -26,16 +26,16 @@ public class EnemySpawner : MonoBehaviour
         }
 
         repeatRate -= 0.1f;
-        yield return new WaitForSecondsRealtime(repeatRate); //////////////////////////////// not working
+        yield return new WaitForSeconds(repeatRate);
         StartCoroutine(InstantiateEnemy());
     }
 
     
     void Update()
     {
-        if (repeatRate <= 0.1f)
+        if (repeatRate <= 2f)
         {
-            repeatRate = 0.1f;
+            repeatRate = 2f;
         }
     }
 }

@@ -13,8 +13,12 @@ public class Settings : MonoBehaviour
 
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject optionsMenu;
+    [SerializeField] GameObject creditsMenu;
 
-    public AudioMixer audioMixer;
+
+    public AudioMixer soundMixer;
+    public AudioMixer musicMixer;
+    
     public TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
 
@@ -49,11 +53,12 @@ public class Settings : MonoBehaviour
     
     public void setSound(float soundVolume){ //Volume sound level
 
-        audioMixer.SetFloat("Sound", soundVolume);
+        soundMixer.SetFloat("Sound", soundVolume);
     }
 
-    public void setMusic(float musicVolume){
-        //still need to add music
+    public void setMusic(float musicVolume)
+    {
+        musicMixer.SetFloat("Music", musicVolume);
     }
 
     public void setQuality(int qualityIndex){ //Quality settings
@@ -70,10 +75,20 @@ public class Settings : MonoBehaviour
 
         mainMenu.SetActive(false);
         optionsMenu.SetActive(true);
+        creditsMenu.SetActive(false);
     }
 
     public void SaveOptions(){ //Save button
         mainMenu.SetActive(true);
         optionsMenu.SetActive(false);
+        creditsMenu.SetActive(false);
+
+    }
+
+    public void OpenCredits() //Open Credits Menu
+    {
+        mainMenu.SetActive(false);
+        optionsMenu.SetActive(false);
+        creditsMenu.SetActive(true);
     }
 }

@@ -6,11 +6,10 @@ using Random = UnityEngine.Random;
 
 public class EnemyFollow : MonoBehaviour
 {
-    [SerializeField] Animator enemyAnimator;
-    [SerializeField] Animator playerAnimator;
+    public Animator enemyAnimator;
 
     public Transform targetPlayer;
-    
+
     private float speed;
     public float distance;
     public float damage;
@@ -18,7 +17,7 @@ public class EnemyFollow : MonoBehaviour
     void Start()
     {
         targetPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        speed = Random.Range(0.5f, 1.2f);
+        speed = Random.Range(1.5f, 2f); //Movement speed
         StartCoroutine(Attack());
     }
 
@@ -35,11 +34,9 @@ public class EnemyFollow : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, targetPlayer.position) <= distance)
         {
-            playerAnimator.enabled = true;
             Player.player.hpSlider.value -= damage;
-            enemyAnimator.Play("Attack");
-            //playerAnimator.Play("Hurt");
-            Debug.Log(Vector2.Distance(transform.position, targetPlayer.position));
+            enemyAnimator.SetTrigger("Attack");
+            Player.player.playerAnimator.Play("Hurt");
         }
         
         yield return new WaitForSeconds(2);
