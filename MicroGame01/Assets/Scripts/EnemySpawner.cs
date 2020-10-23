@@ -15,27 +15,25 @@ public class EnemySpawner : MonoBehaviour
     
     void Start()
     {
-        StartCoroutine(InstantiateEnemy());
+        InvokeRepeating(nameof(InstantiateEnemy), 2f, repeatRate);
     }
     
-    private IEnumerator InstantiateEnemy()
+    void InstantiateEnemy()
     {
         foreach (var enemy in enemiesPrefabs) //Looks for prefabs and spawns them
         {
             Instantiate(enemy, spawn.transform.position, quaternion.identity, transform.parent);
         }
 
-        repeatRate -= 0.1f;
-        yield return new WaitForSeconds(repeatRate);
-        StartCoroutine(InstantiateEnemy());
+        repeatRate -= 0.2f;
     }
 
     
     void Update()
     {
-        if (repeatRate <= 2f)
+        if (repeatRate <= 1f)
         {
-            repeatRate = 2f;
+            repeatRate = 1f;
         }
     }
 }

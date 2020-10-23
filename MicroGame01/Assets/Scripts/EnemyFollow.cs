@@ -17,7 +17,7 @@ public class EnemyFollow : MonoBehaviour
     void Start()
     {
         targetPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        speed = Random.Range(1.5f, 2f); //Movement speed
+        speed = Random.Range(3f, 4f); //Movement speed
         StartCoroutine(Attack());
     }
 
@@ -30,7 +30,7 @@ public class EnemyFollow : MonoBehaviour
         }
     }
 
-    private IEnumerator Attack() //Corountine for attack, 2 seconds per attack & animations
+    private IEnumerator Attack() //Corountine for attack, 1 second per attack & animations
     {
         if (Vector2.Distance(transform.position, targetPlayer.position) <= distance)
         {
@@ -39,7 +39,7 @@ public class EnemyFollow : MonoBehaviour
             Player.player.playerAnimator.Play("Hurt");
         }
         
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1f);
         StartCoroutine(Attack());
     }
 }

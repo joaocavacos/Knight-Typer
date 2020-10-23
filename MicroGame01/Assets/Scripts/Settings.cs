@@ -5,25 +5,27 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using TMPro;
+using System.Linq;
 
 public class Settings : MonoBehaviour
 {
     //Settings Menu things
     //&& Buttons on the Main Menu
 
-    [SerializeField] GameObject mainMenu;
-    [SerializeField] GameObject optionsMenu;
-    [SerializeField] GameObject creditsMenu;
+    public GameObject mainMenu;
+    public GameObject optionsMenu;
+    public GameObject creditsMenu;
 
 
     public AudioMixer soundMixer;
     public AudioMixer musicMixer;
     
     public TMP_Dropdown resolutionDropdown;
-    Resolution[] resolutions;
+    private Resolution[] resolutions;
 
-    void Start() {
-        resolutions = Screen.resolutions;
+    private void Start()
+    {
+        resolutions = Screen.resolutions.Select(resolution => new Resolution {width = resolution.width, height = resolution.height}).Distinct().ToArray();
         resolutionDropdown.ClearOptions();
 
         List<string> options = new List<string>();
@@ -51,21 +53,21 @@ public class Settings : MonoBehaviour
         Debug.Log("The game has quit");
     }
     
-    public void setSound(float soundVolume){ //Volume sound level
+    public void SetSound(float soundVolume){ //Volume sound level
 
         soundMixer.SetFloat("Sound", soundVolume);
     }
 
-    public void setMusic(float musicVolume)
+    public void SetMusic(float musicVolume)
     {
         musicMixer.SetFloat("Music", musicVolume);
     }
 
-    public void setQuality(int qualityIndex){ //Quality settings
+    public void SetQuality(int qualityIndex){ //Quality settings
         QualitySettings.SetQualityLevel(qualityIndex);
     }
 
-    public void setResolution(int resIndex){ //Resolution settings
+    public void SetResolution(int resIndex){ //Resolution settings
 
         Resolution resolution = resolutions[resIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
@@ -78,7 +80,7 @@ public class Settings : MonoBehaviour
         creditsMenu.SetActive(false);
     }
 
-    public void SaveOptions(){ //Save button
+    public void SaveOptions(){ //Save button ----> Doesn't save after game closes (rip)
         mainMenu.SetActive(true);
         optionsMenu.SetActive(false);
         creditsMenu.SetActive(false);

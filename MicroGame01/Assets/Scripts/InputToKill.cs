@@ -16,8 +16,8 @@ public class InputToKill : MonoBehaviour
 	public AudioSource correct;
 	public AudioSource wrong;
 
-	[SerializeField] InputField wordInput;
-	[SerializeField] TextMeshProUGUI wpmText;
+	public InputField wordInput;
+	public TextMeshProUGUI wpmText;
 	
 	string input;
 
@@ -55,6 +55,7 @@ public class InputToKill : MonoBehaviour
 			}
 
 			wordInput.text = String.Empty;
+			wordInput.ActivateInputField();
 		}
 	}
 

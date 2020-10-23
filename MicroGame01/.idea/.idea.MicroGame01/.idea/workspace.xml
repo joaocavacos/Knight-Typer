@@ -20,85 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be44f089-10b5-4305-80bf-872c06efdec0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/CreditsRoll.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/CreditsRoll.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/CreditsRollin.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/CreditsRollin.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Hit_Lose.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Hit_Lose.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Hit_LoseRed.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Hit_LoseRed.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Main Camera.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Main Camera.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/RedFade.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/RedFade.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/RedFadeIn.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/RedFadeIn.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/ScreenShake.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/ScreenShake.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Music.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Music.mixer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Music.mixer.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Music/alexander-nakarada-medieval-loop-one.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Music/alexander-nakarada-medieval-loop-one.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Music/alexander-nakarada-vopna.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Music/alexander-nakarada-vopna.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Music/savfk-short-but-strong.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Music/savfk-short-but-strong.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound.mixer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound.mixer.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/142608__autistic-lucario__error.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/142608__autistic-lucario__error.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/320181__dland__hint.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/320181__dland__hint.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/335908__littlerainyseasons__correct.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/335908__littlerainyseasons__correct.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/458867__raclure__damage-sound-effect.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/458867__raclure__damage-sound-effect.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/471097__spycrah__knife-sword-swing.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/471097__spycrah__knife-sword-swing.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/538151__fupicat__8bit-fall.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/538151__fupicat__8bit-fall.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/icon_knighttyper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/icon_knighttyper.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/logo_knighttyper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/logo_knighttyper.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Weapons/sword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Weapons/sword.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroGame01/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroGame01/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroGame01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroGame01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/BlackFade.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/BlackFade.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/FadeIn.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/FadeIn.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero Knight - Pixel Art/Animations/HeroKnight_AnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero Knight - Pixel Art/Animations/HeroKnight_AnimController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMixer.mixer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMixer.mixer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hero Knight - Pixel Art/ColorSwap/ColorSwap_HeroKnight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero Knight - Pixel Art/ColorSwap/ColorSwap_HeroKnight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hero Knight - Pixel Art/Demo/HeroKnight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero Knight - Pixel Art/Demo/HeroKnight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Music.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Music.mixer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HeavyBandit_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HeavyBandit_0.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LightBandit_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LightBandit_0.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameOver Screen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameOver Screen.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyFollow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Navigator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameOver.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Navigator.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputToKill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputToKill.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ParallaxEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ParallaxEffect.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,18 +51,20 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/InputProcessor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ParallaxEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneTransitions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Navigator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyFollow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Timer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Navigator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ParallaxEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputToKill.cs" />
+        <option value="$PROJECT_DIR$/Assets/Hero Knight - Pixel Art/Demo/HeroKnight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Hero Knight - Pixel Art/ColorSwap/ColorSwap_HeroKnight.cs" />
       </list>
     </option>
   </component>
@@ -211,6 +148,8 @@
       <workItem from="1603236109933" duration="7521000" />
       <workItem from="1603246820189" duration="281000" />
       <workItem from="1603269586820" duration="917000" />
+      <workItem from="1603412665459" duration="3242000" />
+      <workItem from="1603417455989" duration="167000" />
     </task>
     <servers />
   </component>

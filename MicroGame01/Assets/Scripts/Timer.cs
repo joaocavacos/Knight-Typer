@@ -8,15 +8,13 @@ public class Timer : MonoBehaviour
 
 	//Simple timer for records
 
-	[SerializeField] TextMeshProUGUI timer;
+	public TextMeshProUGUI timer;
 
     float currenTime;
     float minutes;
     float seconds;
-    public static string timerCopy;
-
-
-	void Start()
+    
+    void Start()
 	{
         currenTime = 0;
 	}
